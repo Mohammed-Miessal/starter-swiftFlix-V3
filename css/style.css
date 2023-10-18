@@ -12,13 +12,6 @@ body {
 
 /* ------- header ------- */
 
-header {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 0.625rem;
-}
-
 .logo {
     display: flex;
     padding: 0;
@@ -99,6 +92,15 @@ header ul li a {
 @media screen and (max-width: 700px) {}
 
 @media screen and (max-width: 767px) {
+
+    header {
+        margin-top: 10px;
+        width: 43.75rem;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 290px;
+    }
+
     .nav__bar {
         display: none;
     }
@@ -118,24 +120,12 @@ header ul li a {
         margin: 0;
     }
 
-    .main__title,
-    .feature__section,
-    .achievement__section ,.cta__section{
-        display: block;
-        width: 43.75rem;
-        /* width: auto; */
-    }
 
     .main__title h1 {
         font-size: 4.875rem;
         margin-bottom: 1rem;
         color: var(--primary-color);
     }
-
-    /* .title {
-        margin: 0 20%;
-        width: 27.091rem;
-    } */
 
     .main__title p {
         font-size: 1.5rem;
@@ -253,6 +243,16 @@ header ul li a {
         margin-top: -83px;
         height: 1626px;
     }
+ 
+    .main__title,
+    .feature__section,
+    .achievement__section,
+    .cta__section,
+    footer {
+        display: block;
+        width: 43.75rem;
+        /* width: auto; */
+    }
 
     .side1 {
         height: 291px;
@@ -260,7 +260,8 @@ header ul li a {
         flex-wrap: wrap;
     }
 
-    .side1 h2 , .cta__section h3{
+    .side1 h2,
+    .cta__section h3 {
         font-family: "Playfair Display";
         font-size: 59px;
         font-weight: 700;
@@ -291,7 +292,7 @@ header ul li a {
         margin-top: 78px;
     }
 
-    .feature h3  {
+    .feature h3 {
         color: #363940;
         font-family: 'Playfair Display';
         font-size: 22px;
@@ -397,15 +398,15 @@ header ul li a {
         font-weight: 400;
         line-height: 32px;
         letter-spacing: 0.054px;
-    } 
+    }
 
-     /* ///////////// Section 5 ///////////////// */
+    /* ///////////// Section 5 ///////////////// */
 
-    .cta__section{
+    .cta__section {
         display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 450px;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
     }
 
     .cta__section p {
@@ -421,7 +422,7 @@ header ul li a {
         align-items: flex-start;
     }
 
-    .cta__section button{
+    .cta__section button {
         width: 11.688rem;
         height: 4.375rem;
         flex-shrink: 0;
@@ -433,4 +434,52 @@ header ul li a {
         margin: 0 15%;
     }
 
+    .cta__section button span {
+        color: #FFF;
+        font-size: 17px;
+    }
+
+
+    footer {
+        flex-shrink: 0;
+        background: #094B72;
+        height: 350px;
+
+    }
+
+    .footer__logo svg {
+        width: 139px;
+        height: 61px;
+        margin: 30px 0px 0px 30px;
+    }
+
+    .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer__nav ul {
+        list-style-type: none;
+    }
+
+    .footer__nav ul li {
+        color: #eeeff4b8;
+        font-feature-settings: 'salt' on, 'liga' off;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 0;
+    }
+
+    .footer__nav .heading {
+        color: #F4F5F7;
+        padding: 0 0 20px 0;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+    }
 }
