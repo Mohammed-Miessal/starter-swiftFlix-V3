@@ -1,12 +1,16 @@
 :root {
-    font-size: 1rem; 
-   
-  }
+
+    --base-font-size: 1rem;
+    /* ---base-h1:5.625rem; */
+    --primary-color: #094B72;
+}
 
 body {
     margin: 0;
     padding: 0;
 }
+
+/* ------- header ------- */
 
 header {
     display: flex;
@@ -33,7 +37,7 @@ header {
     fill: #094B72;
 }
 
-.nav-bar {
+.nav__bar {
     display: flex;
     padding: 0;
     /* gap: 30px; */
@@ -63,10 +67,10 @@ header ul li a {
     font-style: normal;
     font-weight: 400;
     /* line-height: 23px; */
-    line-height: 1.438rem; 
+    line-height: 1.438rem;
     letter-spacing: 1.5px;
     /* margin: -10px 0px 0px 10px; */
-    margin: -0.625rem 0 0 0.625rem ;
+    margin: -0.625rem 0 0 0.625rem;
     text-transform: uppercase;
 }
 
@@ -79,12 +83,160 @@ header ul li a {
     margin-top: 1.188rem;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px){
+/* ---------------------------------------- */
+/* ---------------- Section main ------------------ */
 
+
+/* ---------------------------------------- */
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {}
+
+@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 699px) and (max-width: 767px) {
+
+
+}
+
+@media screen and (max-width: 767px)  {
+    .nav__bar{
+        display: none;
+    }
+    .title {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main__title {
+        display: block;
+        /* margin-left: 65px; */
+        width: 43.75rem;
+    }
+
+    .main__title h1 {
+        font-size: 4.875rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+    }
+
+    .title  {
+        margin: 0 20%;
+        width: 27.091rem;
+    }
+
+    .main__title p {
+        font-size: 1.5rem;
+        color: var(--neutral-grey-6, #4F4F4F);
+        font-family: 'Plus Jakarta Sans',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 158%;
+        letter-spacing: 0.5px;
+    }
+
+    .main__title button {
+        width: 11.688rem;
+        height: 4.375rem;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 0px;
+        background: var(--primary-color);
+        padding: 0;
+        margin-top: 23px;
+        margin: 0 15%;
+
+    }
     
- }
+    .main__title button span {
+        width: 50px;
+        height: 22px;
+        margin: 29px 36px 29px 36px;
+        color: #F9F8F9;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140.5%;
+        letter-spacing: 1.28px;
+    }
 
- @media screen and (min-width: 1280px) {
-
+    .main__image{
+        margin-top: 30px;
+    }
+    .ellipse1 {
+        width: 700px;
+        height: 750px;
+        background: rgba(110, 168, 255, 0.10);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0px 0px;
+    }
     
- }
+    .ellipse2 {
+        width: 399px;
+        height: 400px;
+        background: #6ea8ff2b;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.49px 110px 171px 68.2px;
+        margin-top: -171px;
+    }
+    
+    .ellipse2 img {
+        width: 438px;
+        height: 671.811px;
+        flex-shrink: 0;
+        margin: 411px 40px 0 105px;
+    }
+
+    .name {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 382px;
+        height: 114px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFFFFF;
+        margin: 0px 100px 100px 151px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    
+    .name h2 {
+        width: 231px;
+        height: 36px;
+        color: #33475B;
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 0;
+    }
+    
+    .name p {
+        width: 161px;
+        height: 36px;
+        color: #727272;
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        padding: 5px 110px 78px 111px;
+        margin: 0;
+    }
+    
+    
+}
