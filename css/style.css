@@ -1,9 +1,8 @@
 :root {
-
     --base-font-size: 1rem;
-    /* ---base-h1:5.625rem; */
     --primary-color: #094B72;
 }
+
 
 body {
     margin: 0;
@@ -15,16 +14,12 @@ body {
 .logo {
     display: flex;
     padding: 0;
-    /* margin: 10px 0; */
     margin: 0.625rem 0 0;
 }
 
 .logo svg {
-    /* width: 150px; */
     width: 9.375rem;
-    /* height: 36px; */
     height: 2.25rem;
-    /* margin-top: 17px; */
     margin-top: 1.063px;
     flex-shrink: 0;
     fill: #094B72;
@@ -33,19 +28,15 @@ body {
 .nav__bar {
     display: flex;
     padding: 0;
-    /* gap: 30px; */
     gap: 1.875rem;
-    /* margin: 1.375rem 0 0; */
 }
 
 header ul li {
     float: right;
     display: inline-flex;
-    /* padding: 12px; */
     padding: 0.75rem;
     justify-content: center;
     align-items: center;
-    /* gap: 56px; */
     gap: 3.5rem;
 }
 
@@ -55,24 +46,18 @@ header ul li a {
     text-decoration: none;
     color: #2D2F30;
     font-family: 'Poppins', sans-serif;
-    /* font-size: 12px; */
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
-    /* line-height: 23px; */
     line-height: 1.438rem;
     letter-spacing: 1.5px;
-    /* margin: -10px 0px 0px 10px; */
     margin: -0.625rem 0 0 0.625rem;
     text-transform: uppercase;
 }
 
 #search {
-    /* width: 24px; */
     width: 1.5rem;
-    /* height: 24px; */
     height: 1.5rem;
-    /* margin-top: 33px; */
     margin-top: 1.188rem;
 }
 
@@ -93,6 +78,10 @@ header ul li a {
 
 @media screen and (max-width: 767px) {
 
+    html{
+        min-width: fit-content;
+    }
+    
     header {
         margin-top: 10px;
         width: 43.75rem;
@@ -243,7 +232,7 @@ header ul li a {
         margin-top: -83px;
         height: 1626px;
     }
- 
+
     .main__title,
     .feature__section,
     .achievement__section,
@@ -251,7 +240,6 @@ header ul li a {
     footer {
         display: block;
         width: 43.75rem;
-        /* width: auto; */
     }
 
     .side1 {
@@ -306,7 +294,6 @@ header ul li a {
         color: #727272;
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: 'Plus Jakarta Sans', sans-serif;
-        /* font-size: 14px; */
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
@@ -481,5 +468,47 @@ header ul li a {
         font-style: normal;
         font-weight: 500;
         line-height: 30px;
+    }
+
+    /* ---------- About ------------ */
+
+    .about__image .ellipse2 img {
+        width: 486px;
+        height: 498.811px;
+        flex-shrink: 0;
+        margin: 250px 34px 0 81px;
+    }
+
+    .about__image .ellipse1 {
+        width: 700px;
+        height: 659px;
+        margin-top: 50px;
+
+    }
+
+    .about__image .ellipse2 {
+        margin-top: -76px;
+    }
+
+    .about__image {
+        margin: 50px 0;
+    }
+
+    /* ---------- Service ------------ */
+
+    .service h1 {
+        font-size: 60px;
+        padding-top: 20px;
+
+    }
+
+    .service img {
+        margin: 411px 40px 0 130px;
+        width: 619px;
+        height: 672px;
+    }
+
+    .service__main {
+        margin-bottom: 150px;
     }
 }
