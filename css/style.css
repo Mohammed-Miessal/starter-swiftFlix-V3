@@ -507,13 +507,18 @@ header ul li a {
         padding-top: 20px;
 
     }
-
+    .service__ellipse1{
+        border-radius: 38%;
+        
+    }
     .service img {
         margin: 317px 40px 0 90px;
         width: 614px;
         height: 554px;
     }
-
+    .service__ellipse2{
+        padding: 0.49px 110px 171px 90.2px;
+    }
     .service__main {
         margin-bottom: 150px;
     }
