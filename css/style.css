@@ -525,6 +525,10 @@ header ul li a {
 
     /* ---------- Contact ------------ */
 
+    .elements{
+        height: 70px;
+    }
+  
 
     .contact__title {
         margin-top: 50px;
@@ -545,7 +549,7 @@ header ul li a {
         width: 100%;
         border: none;
         height: 50px;
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
         padding: 0;
         padding-left: 25px;
         background-color: #ffffff;
@@ -579,7 +583,6 @@ header ul li a {
         font-family: 'Lato', sans-serif;
         height: 50px;
         margin-top: 10px;
-        margin-bottom: 25px;
         padding-left: 25px;
         background-color: #ffffff;
         outline: none;
@@ -634,6 +637,49 @@ header ul li a {
         height: 100%;
     }
 
+   /* ----- Form Validation ----------- */
+
+    .form-flow i{
+        right: 1rem;
+        bottom: 2.1rem;
+        visibility: hidden;
+    }
+
+    .form-flow small{
+        visibility: hidden;
+    }
+    
+    .form-flow.success input{
+        border: 1px solid transparent;
+        border-color:rgb(83, 200, 15) ;
+        visibility: visible;
+    }
+    
+    .form-flow.error input{
+        border: 1px solid transparent;
+        border-color: rgb(199, 34, 34);
+        visibility: visible;
+    }
+    .form-flow.error select {
+        border: 1px solid red;
+    }
+    
+    .form-flow.success .fa-check-circle{
+        visibility: visible;
+        color: rgb(83, 200, 15);
+    }
+    
+    .form-flow.error .fa-exclamation-circle{
+        visibility: visible;
+        color: rgb(199, 34, 34);
+    }
+    
+    .form-flow.error small{
+        visibility: visible;
+        color:rgb(199, 34, 34); ;
+    }
+
+   /* ------------------------------------- */
 
     /* ////// Map //// */
 

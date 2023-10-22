@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
@@ -66,34 +66,41 @@
                 <div class="title">
                     <h1>Contact US </h1>
                 </div>
-                <form>
-                    <div>
-                        <input type="text" placeholder="Name">
+                <form id="form" action="">
+                    <div class="form-flow elements">
+                        <input type="text" placeholder="Name" id="fullname">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massege</small>
                     </div>
-                    <div>
-                        <input type="text" placeholder="Phone Number">
+                    <div class="form-flow elements">
+                        <input type="email" placeholder="Email" id="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massege</small>
                     </div>
-                    <div>
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="contact__dropdown">
+                    <div class="contact__dropdown form-flow">
 
                         <label for="topicSelect">Choose a Topic:</label>
-                        <select id="topicSelect" name="topic" class="topic">
+                        <select id="topicSelect" name="topic" class="topic" >
                             <option selected disabled>Choose a Topic</option>
                             <option value="topic1">Topic 1</option>
                             <option value="topic2">Topic 2</option>
                             <option value="topic3">Topic 3</option>
                             <option value="topic4">Topic 4</option>
                         </select>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massege</small>
                     </div>
-                    <div>
-                        <input type="text" class="message__box" placeholder="Message">
+                    <div class="form-flow  ">
+                        <input type="text" class="message__box" placeholder="Message" id="message">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massege</small>
                     </div>
-                    <div class="d-flex ">
-                        <button>
-                            <span>SEND</span>
-                        </button>
+                    <div class="form-flow">
+                        <button>Submit</button>
                     </div>
                 </form>
 
