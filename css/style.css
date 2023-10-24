@@ -2,7 +2,11 @@
     --base-font-size: 1rem;
     --primary-color: #094B72;
 }
-
+/* * {
+  
+    box-sizing: border-box;
+ 
+  } */
 
 body {
     margin: 0;
