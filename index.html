@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Unicons CSS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="js/script.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 
 </head>
 
@@ -83,12 +85,12 @@
                     <p id="description">Top trusted companies in Morocco</p>
                     <div class="logo__companies">
                         <!-- <div> -->
-                            <img src="images/Inetum.png" alt="Inetum Logo">
-                            <img src="images/cegedim.png" alt="Cegedim Logo">
+                        <img src="images/Inetum.png" alt="Inetum Logo">
+                        <img src="images/cegedim.png" alt="Cegedim Logo">
                         <!-- </div>
                         <div> -->
-                            <img src="images/Capgemini.png" alt="Capgemini Logo" id="cap">
-                            <img src="images/Wobz.png" alt="Wobz Logo" id="wobz">
+                        <img src="images/Capgemini.png" alt="Capgemini Logo" id="cap">
+                        <img src="images/Wobz.png" alt="Wobz Logo" id="wobz">
 
                         <!-- </div> -->
 
@@ -119,7 +121,7 @@
                 <p>We are here to assist businesses and projects in Morocco with consulting for repair and maintenance.
                 </p>
             </div>
-            
+
 
         </div>
         <div class="side2">
@@ -193,7 +195,7 @@
                         fill="#027794" />
                 </svg>
                 <h3>Facility Maintenance</h3>
-                <p>We provide comprehensive facility maintenance services to keep your premises safe 
+                <p>We provide comprehensive facility maintenance services to keep your premises safe
                 </p>
                 <button class="learn-more " id="myBtn2" onclick="ModelCard(2)">
                     <span class="circle" aria-hidden="true">
@@ -426,7 +428,7 @@
     <!-- end section four  -->
 
 
-    <section class="testimonial_section">
+    <!-- <section class="testimonial_section">
         <div class="cards">
             <h2>Clients Testimonial</h2>
             <div class="slideshow-container">
@@ -464,12 +466,48 @@
 
                     </div>
                 </div>
+                <div class="mySlides1 ">
+                    <div class="card1">
+                        <h3>Incredible Experience</h3>
+                        <p>We had an incredible experience working with Landify and were impressed they made such a big
+                            difference in only three weeks. Our team is so grateful for the wonderful improvements they
+                            made and
+                            their ability to get familiar with the concept so quickly.</p>
+                    </div>
+                    <div class="client1">
+                        <img src="images/Photo1.svg" alt="Client Photo">
+                        <div class="card_group">
+                            <h3>Sarah Bentaher</h3>
+                            <p>CEO, MA Industires</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides1">
+                    <div class="card2">
+                        <h3>Dependable, Responsive, Professional Partner</h3>
+                        <p>Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing
+                            Apps and
+                            Custom Social Networking Apps. The experience has been pleasant, professional and exceeding
+                            our
+                            expectations. </p>
+                    </div>
+                    <div class="client2">
+                        <img src="images/Photo.svg" alt="Client Photo">
+                        <div class="card_group">
+                            <h3>Salima Alami</h3>
+                            <p>CEO, FOODSO GROUP</p>
+                        </div>
+
+                    </div>
+                </div>
+         
                 <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
-
         </div>
-    </section>
+    </section> -->
+
+
 
 
     <!-- section four starts -->
@@ -488,6 +526,24 @@
     <!-- end section four  -->
 
 
+
+    <section class="testimonial_section">
+        <h2>Clients Testimonial</h2>
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="carousel">
+          <img src="images/Capture d’écran 2023-10-16 160858.png" alt="img" draggable="false">
+          <img src="images/Capture d’écran 2023-10-26 222105.png" alt="img" draggable="false">
+          <img src="images/Capture d’écran 2023-10-16 160858.png" alt="img" draggable="false">
+          <img src="images/Capture d’écran 2023-10-26 222105.png" alt="img" draggable="false">
+          <img src="images/Capture d’écran 2023-10-16 160858.png" alt="img" draggable="false">
+          <img src="images/Capture d’écran 2023-10-26 222105.png" alt="img" draggable="false">
+          <img src="images/Capture d’écran 2023-10-16 160858.png" alt="img" draggable="false">
+          <img src="images/Capture d’écran 2023-10-26 222105.png" alt="img" draggable="false">
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </section>
     <footer>
         <div class="footer__logo">
             <svg viewBox="0 0 165 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -528,38 +584,7 @@
         </div>
     </footer>
 
-    <script>
 
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let x = document.getElementsByClassName("mySlides1");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-
-        // Fonction pour changer automatiquement les diapositives
-        function autoSlide() {
-            plusSlides(1);
-        }
-
-        // Démarrez le changement automatique toutes les 3 secondes (3000 millisecondes)
-        setInterval(autoSlide, 3000);
-    </script>
 </body>
 
 </html>
