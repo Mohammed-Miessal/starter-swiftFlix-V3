@@ -1,127 +1,72 @@
+const nav = document.querySelector(".nav"),
+  searchIcon = document.querySelector("#searchIcon"),
+  navOpenBtn = document.querySelector(".navOpenBtn"),
+  navCloseBtn = document.querySelector(".navCloseBtn");
 
-//selecting elements
-let form = document.querySelector("#form");
-let userName = document.getElementById("fullname");
-let email = document.getElementById("email");
-let select = document.getElementById("topicSelect");
-let message = document.getElementById("message");
+// Search traitement 
 
-form.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    formValidation()
-})
+searchIcon.addEventListener("click", () => {
+  nav.classList.toggle("openSearch");
+  nav.classList.remove("openNav");
+  if (nav.classList.contains("openSearch")) {
+    return searchIcon.classList.replace("uil-search", "uil-times");
+  }
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
 
-function formValidation(){
-    let userNameValue = userName.value;
-    let emailValue = email.value;
-    let selectValue = select.value;
-    let messageValue = message.value;
+// Navbar traitement 
 
-    if(userNameValue === ''){
-        errorValidation(userName, "Full Name can not be blank")
-    }else{
-        successValidation(userName);
+navOpenBtn.addEventListener("click", () => {
+  nav.classList.add("openNav");
+  nav.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("openNav");
+});
+
+// ---------- Modal in Cards --------
+
+function ModelCard(index) {
+  // Get the modal
+
+  var modal = document.getElementById("myModal" + index);
+  var btn = document.getElementById("myBtn" + index);
+
+  // Get the button that opens the modal
+
+  // Get the <span> element that closes the modal
+  var span = modal.querySelector(".close");
+  // When the user clicks the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
     }
-
-    function errorValidation(input, message){
-        const formFlow = input.parentElement;
-        const small = formFlow.querySelector("small");
-
-        small.innerText = message;
-        formFlow.className = "form-flow error";
-
-    }
-    function successValidation(input, message){
-        const formFlow = input.parentElement;
-        const small = formFlow.querySelector("small");
-
-        small.innerText = message;
-        formFlow.className = "form-flow success";
-
-    }
-//////////////////////////////////////////////////////////////////
-
-    if(emailValue === ''){
-        errorValidation(email, "Email can not be blank")
-    }else{
-        successValidation(email);
-    }
-
-    function errorValidation(input, message){
-        const formFlow = input.parentElement;
-        const small = formFlow.querySelector("small");
-
-        small.innerText = message;
-        formFlow.className = "form-flow error";
-
-    }
-    function successValidation(input, message){
-        const formFlow = input.parentElement;
-        const small = formFlow.querySelector("small");
-
-        small.innerText = message;
-        formFlow.className = "form-flow success";
-
-    }
-/////////////////////////////////////////////////////
-
-    if(selectValue === 'Choose a Topic'){
-        errorValidation(select, "Select can not be blank")
-    }else{
-        successValidation(select);
-    }
-
-    function errorValidation(input, message) {
-        const formFlow = input.parentElement;
-        const select = input; // La balise select
-        const small = formFlow.querySelector("small");
-    
-        small.innerText = message;
-        formFlow.className = "form-flow error"; // Ajout de la classe "error" pour le style CSS
-    }
-
-    function successValidation(input, message){
-        const formFlow = input.parentElement;
-        const small = formFlow.querySelector("small");
-
-        small.innerText = message;
-        formFlow.className = "form-flow success";
-
-    }
-//////////////////////////////////////////////////////////////////
-
-    if(messageValue === ''){
-        errorValidation(message, "Message can not be blank")
-    }
-    else{
-        successValidation(message);
-    }
-
-    function errorValidation(input, message){
-        const formFlow = input.parentElement;
-        const small = formFlow.querySelector("small");
-
-        small.innerText = message;
-        formFlow.className = "form-flow error";
-
-    }
-    function successValidation(input, message){
-        const formFlow = input.parentElement;
-        const small = formFlow.querySelector("small");
-
-        small.innerText = message;
-        formFlow.className = "form-flow success";
-
-    }
-
+  }
 }
-// ----------------------------------------------------------------------
 
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
-    };
-    
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+// ----------------- FAQ section -------------
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
 }
