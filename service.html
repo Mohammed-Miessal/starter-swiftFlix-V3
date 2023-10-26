@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar with Search Box</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <!-- header section strats -->
-    <header>
-        <div class="logo">
-            <svg width="144" height="36" viewBox="0 0 144 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="18" cy="18" r="18" fill="#094B72" />
-                <path
-                    d="M20.32 24.14C19.2933 24.14 18.3733 23.9733 17.56 23.64C16.7467 23.3067 16.0933 22.8133 15.6 22.16C15.12 21.5067 14.8667 20.72 14.84 19.8H18.48C18.5333 20.32 18.7133 20.72 19.02 21C19.3267 21.2667 19.7267 21.4 20.22 21.4C20.7267 21.4 21.1267 21.2867 21.42 21.06C21.7133 20.82 21.86 20.4933 21.86 20.08C21.86 19.7333 21.74 19.4467 21.5 19.22C21.2733 18.9933 20.9867 18.8067 20.64 18.66C20.3067 18.5133 19.8267 18.3467 19.2 18.16C18.2933 17.88 17.5533 17.6 16.98 17.32C16.4067 17.04 15.9133 16.6267 15.5 16.08C15.0867 15.5333 14.88 14.82 14.88 13.94C14.88 12.6333 15.3533 11.6133 16.3 10.88C17.2467 10.1333 18.48 9.76 20 9.76C21.5467 9.76 22.7933 10.1333 23.74 10.88C24.6867 11.6133 25.1933 12.64 25.26 13.96H21.56C21.5333 13.5067 21.3667 13.1533 21.06 12.9C20.7533 12.6333 20.36 12.5 19.88 12.5C19.4667 12.5 19.1333 12.6133 18.88 12.84C18.6267 13.0533 18.5 13.3667 18.5 13.78C18.5 14.2333 18.7133 14.5867 19.14 14.84C19.5667 15.0933 20.2333 15.3667 21.14 15.66C22.0467 15.9667 22.78 16.26 23.34 16.54C23.9133 16.82 24.4067 17.2267 24.82 17.76C25.2333 18.2933 25.44 18.98 25.44 19.82C25.44 20.62 25.2333 21.3467 24.82 22C24.42 22.6533 23.8333 23.1733 23.06 23.56C22.2867 23.9467 21.3733 24.14 20.32 24.14Z"
-                    fill="white" />
-                <path
-                    d="M55.32 25.14C54.2933 25.14 53.3733 24.9733 52.56 24.64C51.7467 24.3067 51.0933 23.8133 50.6 23.16C50.12 22.5067 49.8667 21.72 49.84 20.8H53.48C53.5333 21.32 53.7133 21.72 54.02 22C54.3267 22.2667 54.7267 22.4 55.22 22.4C55.7267 22.4 56.1267 22.2867 56.42 22.06C56.7133 21.82 56.86 21.4933 56.86 21.08C56.86 20.7333 56.74 20.4467 56.5 20.22C56.2733 19.9933 55.9867 19.8067 55.64 19.66C55.3067 19.5133 54.8267 19.3467 54.2 19.16C53.2933 18.88 52.5533 18.6 51.98 18.32C51.4067 18.04 50.9133 17.6267 50.5 17.08C50.0867 16.5333 49.88 15.82 49.88 14.94C49.88 13.6333 50.3533 12.6133 51.3 11.88C52.2467 11.1333 53.48 10.76 55 10.76C56.5467 10.76 57.7933 11.1333 58.74 11.88C59.6867 12.6133 60.1933 13.64 60.26 14.96H56.56C56.5333 14.5067 56.3667 14.1533 56.06 13.9C55.7533 13.6333 55.36 13.5 54.88 13.5C54.4667 13.5 54.1333 13.6133 53.88 13.84C53.6267 14.0533 53.5 14.3667 53.5 14.78C53.5 15.2333 53.7133 15.5867 54.14 15.84C54.5667 16.0933 55.2333 16.3667 56.14 16.66C57.0467 16.9667 57.78 17.26 58.34 17.54C58.9133 17.82 59.4067 18.2267 59.82 18.76C60.2333 19.2933 60.44 19.98 60.44 20.82C60.44 21.62 60.2333 22.3467 59.82 23C59.42 23.6533 58.8333 24.1733 58.06 24.56C57.2867 24.9467 56.3733 25.14 55.32 25.14ZM80.0647 13.84L77.0447 25H73.2647L71.5047 17.76L69.6847 25H65.9247L62.8847 13.84H66.3047L67.8847 21.82L69.7647 13.84H73.3847L75.2847 21.78L76.8447 13.84H80.0647ZM84.5889 12.68C83.9889 12.68 83.4956 12.5067 83.1089 12.16C82.7356 11.8 82.5489 11.36 82.5489 10.84C82.5489 10.3067 82.7356 9.86667 83.1089 9.52C83.4956 9.16 83.9889 8.98 84.5889 8.98C85.1756 8.98 85.6556 9.16 86.0289 9.52C86.4156 9.86667 86.6089 10.3067 86.6089 10.84C86.6089 11.36 86.4156 11.8 86.0289 12.16C85.6556 12.5067 85.1756 12.68 84.5889 12.68ZM86.2889 13.84V25H82.8689V13.84H86.2889ZM95.8673 16.68H94.0273V25H90.6073V16.68H89.3673V13.84H90.6073V13.52C90.6073 12.1467 91.0007 11.1067 91.7873 10.4C92.574 9.68 93.7273 9.32 95.2473 9.32C95.5007 9.32 95.6873 9.32667 95.8073 9.34V12.24C95.154 12.2 94.694 12.2933 94.4273 12.52C94.1607 12.7467 94.0273 13.1533 94.0273 13.74V13.84H95.8673V16.68ZM105.194 22.1V25H103.454C102.214 25 101.248 24.7 100.554 24.1C99.861 23.4867 99.5144 22.4933 99.5144 21.12V16.68H98.1544V13.84H99.5144V11.12H102.934V13.84H105.174V16.68H102.934V21.16C102.934 21.4933 103.014 21.7333 103.174 21.88C103.334 22.0267 103.601 22.1 103.974 22.1H105.194ZM117.739 10.96V13.7H112.019V16.66H116.299V19.32H112.019V25H108.599V10.96H117.739ZM122.757 12.68C122.157 12.68 121.664 12.5067 121.277 12.16C120.904 11.8 120.717 11.36 120.717 10.84C120.717 10.3067 120.904 9.86667 121.277 9.52C121.664 9.16 122.157 8.98 122.757 8.98C123.344 8.98 123.824 9.16 124.197 9.52C124.584 9.86667 124.777 10.3067 124.777 10.84C124.777 11.36 124.584 11.8 124.197 12.16C123.824 12.5067 123.344 12.68 122.757 12.68ZM124.457 13.84V25H121.037V13.84H124.457ZM135.035 25L132.895 21.9L131.095 25H127.395L131.075 19.3L127.295 13.84H131.135L133.275 16.92L135.075 13.84H138.775L135.035 19.46L138.875 25H135.035Z"
-                    fill="#2D2F30" />
-            </svg>
+    <nav class="nav">
+        <!-- --------- logo ------- -->
+        <svg viewBox="0 0 144 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="18" fill="#094B72" />
+            <path
+                d="M20.32 24.14C19.2933 24.14 18.3733 23.9733 17.56 23.64C16.7467 23.3067 16.0933 22.8133 15.6 22.16C15.12 21.5067 14.8667 20.72 14.84 19.8H18.48C18.5333 20.32 18.7133 20.72 19.02 21C19.3267 21.2667 19.7267 21.4 20.22 21.4C20.7267 21.4 21.1267 21.2867 21.42 21.06C21.7133 20.82 21.86 20.4933 21.86 20.08C21.86 19.7333 21.74 19.4467 21.5 19.22C21.2733 18.9933 20.9867 18.8067 20.64 18.66C20.3067 18.5133 19.8267 18.3467 19.2 18.16C18.2933 17.88 17.5533 17.6 16.98 17.32C16.4067 17.04 15.9133 16.6267 15.5 16.08C15.0867 15.5333 14.88 14.82 14.88 13.94C14.88 12.6333 15.3533 11.6133 16.3 10.88C17.2467 10.1333 18.48 9.76 20 9.76C21.5467 9.76 22.7933 10.1333 23.74 10.88C24.6867 11.6133 25.1933 12.64 25.26 13.96H21.56C21.5333 13.5067 21.3667 13.1533 21.06 12.9C20.7533 12.6333 20.36 12.5 19.88 12.5C19.4667 12.5 19.1333 12.6133 18.88 12.84C18.6267 13.0533 18.5 13.3667 18.5 13.78C18.5 14.2333 18.7133 14.5867 19.14 14.84C19.5667 15.0933 20.2333 15.3667 21.14 15.66C22.0467 15.9667 22.78 16.26 23.34 16.54C23.9133 16.82 24.4067 17.2267 24.82 17.76C25.2333 18.2933 25.44 18.98 25.44 19.82C25.44 20.62 25.2333 21.3467 24.82 22C24.42 22.6533 23.8333 23.1733 23.06 23.56C22.2867 23.9467 21.3733 24.14 20.32 24.14Z"
+                fill="white" />
+            <path
+                d="M55.32 25.14C54.2933 25.14 53.3733 24.9733 52.56 24.64C51.7467 24.3067 51.0933 23.8133 50.6 23.16C50.12 22.5067 49.8667 21.72 49.84 20.8H53.48C53.5333 21.32 53.7133 21.72 54.02 22C54.3267 22.2667 54.7267 22.4 55.22 22.4C55.7267 22.4 56.1267 22.2867 56.42 22.06C56.7133 21.82 56.86 21.4933 56.86 21.08C56.86 20.7333 56.74 20.4467 56.5 20.22C56.2733 19.9933 55.9867 19.8067 55.64 19.66C55.3067 19.5133 54.8267 19.3467 54.2 19.16C53.2933 18.88 52.5533 18.6 51.98 18.32C51.4067 18.04 50.9133 17.6267 50.5 17.08C50.0867 16.5333 49.88 15.82 49.88 14.94C49.88 13.6333 50.3533 12.6133 51.3 11.88C52.2467 11.1333 53.48 10.76 55 10.76C56.5467 10.76 57.7933 11.1333 58.74 11.88C59.6867 12.6133 60.1933 13.64 60.26 14.96H56.56C56.5333 14.5067 56.3667 14.1533 56.06 13.9C55.7533 13.6333 55.36 13.5 54.88 13.5C54.4667 13.5 54.1333 13.6133 53.88 13.84C53.6267 14.0533 53.5 14.3667 53.5 14.78C53.5 15.2333 53.7133 15.5867 54.14 15.84C54.5667 16.0933 55.2333 16.3667 56.14 16.66C57.0467 16.9667 57.78 17.26 58.34 17.54C58.9133 17.82 59.4067 18.2267 59.82 18.76C60.2333 19.2933 60.44 19.98 60.44 20.82C60.44 21.62 60.2333 22.3467 59.82 23C59.42 23.6533 58.8333 24.1733 58.06 24.56C57.2867 24.9467 56.3733 25.14 55.32 25.14ZM80.0647 13.84L77.0447 25H73.2647L71.5047 17.76L69.6847 25H65.9247L62.8847 13.84H66.3047L67.8847 21.82L69.7647 13.84H73.3847L75.2847 21.78L76.8447 13.84H80.0647ZM84.5889 12.68C83.9889 12.68 83.4956 12.5067 83.1089 12.16C82.7356 11.8 82.5489 11.36 82.5489 10.84C82.5489 10.3067 82.7356 9.86667 83.1089 9.52C83.4956 9.16 83.9889 8.98 84.5889 8.98C85.1756 8.98 85.6556 9.16 86.0289 9.52C86.4156 9.86667 86.6089 10.3067 86.6089 10.84C86.6089 11.36 86.4156 11.8 86.0289 12.16C85.6556 12.5067 85.1756 12.68 84.5889 12.68ZM86.2889 13.84V25H82.8689V13.84H86.2889ZM95.8673 16.68H94.0273V25H90.6073V16.68H89.3673V13.84H90.6073V13.52C90.6073 12.1467 91.0007 11.1067 91.7873 10.4C92.574 9.68 93.7273 9.32 95.2473 9.32C95.5007 9.32 95.6873 9.32667 95.8073 9.34V12.24C95.154 12.2 94.694 12.2933 94.4273 12.52C94.1607 12.7467 94.0273 13.1533 94.0273 13.74V13.84H95.8673V16.68ZM105.194 22.1V25H103.454C102.214 25 101.248 24.7 100.554 24.1C99.861 23.4867 99.5144 22.4933 99.5144 21.12V16.68H98.1544V13.84H99.5144V11.12H102.934V13.84H105.174V16.68H102.934V21.16C102.934 21.4933 103.014 21.7333 103.174 21.88C103.334 22.0267 103.601 22.1 103.974 22.1H105.194ZM117.739 10.96V13.7H112.019V16.66H116.299V19.32H112.019V25H108.599V10.96H117.739ZM122.757 12.68C122.157 12.68 121.664 12.5067 121.277 12.16C120.904 11.8 120.717 11.36 120.717 10.84C120.717 10.3067 120.904 9.86667 121.277 9.52C121.664 9.16 122.157 8.98 122.757 8.98C123.344 8.98 123.824 9.16 124.197 9.52C124.584 9.86667 124.777 10.3067 124.777 10.84C124.777 11.36 124.584 11.8 124.197 12.16C123.824 12.5067 123.344 12.68 122.757 12.68ZM124.457 13.84V25H121.037V13.84H124.457ZM135.035 25L132.895 21.9L131.095 25H127.395L131.075 19.3L127.295 13.84H131.135L133.275 16.92L135.075 13.84H138.775L135.035 19.46L138.875 25H135.035Z"
+                fill="#2D2F30" />
+        </svg>
+        <!-- --------- end logo ------- -->
+        <div class="menu">
+
         </div>
-        <ul class="nav__bar">
+        <!-- --------- nav-links ------- -->
+        <ul class="nav-links">
+            <!-- --------- nav-links closen icon ------- -->
+            <i class="uil uil-times navCloseBtn"></i>
+            <!-- --------- end nav-links closen icon ------- -->
             <li class="nav-item"><a href="index.html">home</a></li>
             <li class="nav-item"><a href="about.html">about</a></li>
-            <li class="nav-item"><a href="service.html">services</a></li>
+            <!-- <li class="nav-item"><a href="service.html">services</a></li> -->
+            <li class="nav-item">
+                <a href="service.html">services</a>
+                <ul class="dropdown">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                </ul>
+            </li>
             <li class="nav-item"><a href="contact.html">contact</a></li>
         </ul>
-        <div class="header__icons">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" id="search">
-                <path
-                    d="M21 21L15 15L21 21ZM17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z"
-                    stroke="#2D2F30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="vuesax/outline/textalign-justifycenter">
-                    <g id="textalign-justifycenter">
-                        <path id="Vector"
-                            d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z"
-                            fill="#292D32" />
-                        <path id="Vector_2"
-                            d="M21 10.25H3C2.59 10.25 2.25 9.91 2.25 9.5C2.25 9.09 2.59 8.75 3 8.75H21C21.41 8.75 21.75 9.09 21.75 9.5C21.75 9.91 21.41 10.25 21 10.25Z"
-                            fill="#292D32" />
-                        <path id="Vector_3"
-                            d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z"
-                            fill="#292D32" />
-                        <path id="Vector_4"
-                            d="M21 20.25H3C2.59 20.25 2.25 19.91 2.25 19.5C2.25 19.09 2.59 18.75 3 18.75H21C21.41 18.75 21.75 19.09 21.75 19.5C21.75 19.91 21.41 20.25 21 20.25Z"
-                            fill="#292D32" />
-                    </g>
-                </g>
-            </svg>
+        <!-- --------- end nav-links ------- -->
+
+        <!-- --------- search icon ------- -->
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <!-- --------- end search icon ------- -->
+
+        <!-- --------- search input ------- -->
+        <div class="search-box">
+            <i class="uil uil-search search-icon"></i>
+            <input type="text" placeholder="Search here..." />
         </div>
+        <!-- --------- search input ------- -->
 
+        <!-- --------- nav-links icon ------- -->
+        <i class="uil uil-bars navOpenBtn"></i>
+        <!-- --------- nav-links ocon ------- -->
 
-    </header>
-    <!-- end header section -->
+    </nav>
+
     <!-- First section starts -->
-    <section class="main service__main">
+    <section class="main">
         <div class="container">
 
-            <div class="main__title">
-                <div class="title service">
-                    <h1>
+            <div class="main__title ">
+                <div class="title title__service">
+                    <h1> 
                         WE PROVIDE
                         PROFESSIONAL
                         HOME SERVICES. </h1>
@@ -71,32 +79,34 @@
                         tailored
                         just for you.</p>
 
-                    <button><span>CONTACT</span></button>
+                    <button><span>CONTACT US</span></button>
                 </div>
             </div>
-            <div class="main__image ">
-                <div class="ellipse1 service__ellipse1">
-                    <div class="ellipse2 service  service__ellipse2">
-                        <img src="images/plumber-pointing-up-removebg-preview.png" alt="agent repaire">
+            <div class="main__image image__service">
+                <div class="ellipse1">
+                    <div class="ellipse2">
+                        <img id="img__service" src="images/plumber-pointing-up-removebg-preview.png" alt="agent repaire">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end First section -->
+
     <!-- Second section starts -->
     <section class="feature__section">
         <div class="side1">
-            <div class="title">
+            <div class="title2">
                 <h2> Why do we help with consulting?</h2>
+                <p>We are here to assist businesses and projects in Morocco with consulting for repair and maintenance.
+                </p>
             </div>
-            <p>We are here to assist businesses and projects in Morocco with consulting for repair and maintenance.
-            </p>
+           
 
         </div>
         <div class="side2">
             <div class="feature">
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" fill="none">
                     <path
                         d="M23.125 3.08331C17.9185 3.0855 13.4564 6.80585 12.5179 11.9271C16.9995 9.47471 22.6205 11.1197 25.0729 15.6012C26.5869 18.3679 26.5869 21.7153 25.0729 24.482C30.9332 23.4085 34.8137 17.7875 33.7402 11.9272C32.8015 6.80275 28.3347 3.08134 23.125 3.08331Z"
                         fill="#C3E8F1" />
@@ -109,9 +119,54 @@
                 </svg>
                 <h3>Equipment Maintenance</h3>
                 <p>Our equipment maintenance team ensures that your machinery operates at peak efficiency</p>
+                <button class="learn-more" id="myBtn1" onclick="ModelCard(1)">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Read More</span>
+                </button>
+                <!-- The Modal -->
+                <div id="myModal1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <!-- <p>Some text in the Modal..</p> -->
+                        <div class="card">
+                            <div class="header">
+                                <span class="icon">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path clip-rule="evenodd"
+                                            d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                                <p class="alert">New message!</p>
+                            </div>
+
+                            <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+                                vel adipisci blanditiis voluptates eum. Nam, cum minima?
+                            </p>
+
+                            <div class="actions">
+                                <a class="read" href="">
+                                    Take a Look
+                                </a>
+
+                                <a class="mark-as-read" href="">
+                                    Mark as Read
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- -------------------- -->
+
             </div>
             <div class="feature">
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" fill="none">
                     <path
                         d="M29.2917 9.25H7.70833C5.15402 9.25 3.08333 11.3207 3.08333 13.875V18.0697L13.6243 21.5833H23.3757L33.9167 18.0697V13.875C33.9167 11.3207 31.846 9.25 29.2917 9.25Z"
                         fill="#C3E8F1" />
@@ -122,9 +177,53 @@
                 <h3>Facility Maintenance</h3>
                 <p>We provide comprehensive facility maintenance services to keep your premises safe and functional
                 </p>
+                <button class="learn-more " id="myBtn2" onclick="ModelCard(2)">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Read More</span>
+                </button>
+                <!-- The Modal -->
+                <div id="myModal2" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <!-- <p>Some text in the Modal..</p> -->
+                        <div class="card">
+                            <div class="header">
+                                <span class="icon">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path clip-rule="evenodd"
+                                            d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                                <p class="alert">New message!</p>
+                            </div>
+
+                            <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+                                vel adipisci blanditiis voluptates eum. Nam, cum minima?
+                            </p>
+
+                            <div class="actions">
+                                <a class="read" href="">
+                                    Take a Look
+                                </a>
+
+                                <a class="mark-as-read" href="">
+                                    Mark as Read
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- -------------------- -->
             </div>
-            <div class="feature">
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+            <div class="feature num3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" fill="none">
                     <path
                         d="M27.3439 22.5421L23.6038 25.981C21.6807 27.6575 19.4212 28.9032 16.977 29.6345L17.9693 34.2644C18.02 34.5008 18.1256 34.722 18.2775 34.9101C18.4295 35.0982 18.6235 35.2479 18.844 35.3472C19.0644 35.4464 19.3051 35.4925 19.5467 35.4816C19.7882 35.4707 20.0238 35.4032 20.2344 35.2844L26.255 31.8887C27.1024 31.3738 27.7643 30.6031 28.1453 29.6877C28.5263 28.7723 28.6067 27.7595 28.3748 26.7955L27.3439 22.5421ZM11.2012 13.5295L14.4212 9.70633L10.4055 8.73742C9.42922 8.39699 8.36274 8.42135 7.40303 8.806C6.44332 9.19064 5.65522 9.90959 5.1843 10.83L1.79234 16.8424C1.67349 17.053 1.60585 17.2886 1.5949 17.5302C1.58394 17.7717 1.62996 18.0125 1.72926 18.233C1.82855 18.4535 1.97832 18.6475 2.16647 18.7994C2.35462 18.9513 2.57587 19.0568 2.81234 19.1074L7.5495 20.1229C8.33484 17.7122 9.57437 15.4741 11.2012 13.5295ZM25.7978 13.5917C26.2552 13.5917 26.7023 13.4561 27.0826 13.202C27.4629 12.9479 27.7593 12.5867 27.9343 12.1642C28.1093 11.7416 28.1551 11.2767 28.0659 10.8281C27.9767 10.3795 27.7564 9.96745 27.433 9.64404C27.1096 9.32063 26.6976 9.10039 26.249 9.01116C25.8004 8.92193 25.3354 8.96773 24.9129 9.14276C24.4903 9.31778 24.1292 9.61418 23.8751 9.99447C23.621 10.3748 23.4853 10.8219 23.4853 11.2792C23.4856 11.8925 23.7293 12.4805 24.1629 12.9142C24.5965 13.3478 25.1846 13.5915 25.7978 13.5917Z"
                         fill="#027794" />
@@ -134,9 +233,53 @@
                 </svg>
                 <h3>Information and Technology</h3>
                 <p>Our information and technology experts offer cutting-edge solutions for your IT needs</p>
+                <button class="learn-more " id="myBtn3" onclick="ModelCard(3)">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Read More</span>
+                </button>
+                <!-- The Modal -->
+                <div id="myModal3" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <!-- <p>Some text in the Modal..</p> -->
+                        <div class="card">
+                            <div class="header">
+                                <span class="icon">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path clip-rule="evenodd"
+                                            d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                                <p class="alert">New message!</p>
+                            </div>
+
+                            <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+                                vel adipisci blanditiis voluptates eum. Nam, cum minima?
+                            </p>
+
+                            <div class="actions">
+                                <a class="read" href="">
+                                    Take a Look
+                                </a>
+
+                                <a class="mark-as-read" href="">
+                                    Mark as Read
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- -------------------- -->
             </div>
-            <div class="feature">
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+            <div class="feature num4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" fill="none">
                     <path
                         d="M9.24999 25.4375C8.1828 25.4375 7.13957 25.1211 6.25223 24.5282C5.36489 23.9353 4.67329 23.0925 4.26489 22.1066C3.85649 21.1206 3.74964 20.0357 3.95784 18.989C4.16604 17.9423 4.67994 16.9809 5.43456 16.2262C6.18918 15.4716 7.15063 14.9577 8.19732 14.7495C9.24401 14.5413 10.3289 14.6482 11.3149 15.0566C12.3008 15.465 13.1436 16.1566 13.7365 17.0439C14.3294 17.9313 14.6458 18.9745 14.6458 20.0417C14.6441 21.4722 14.0751 22.8437 13.0635 23.8552C12.052 24.8667 10.6805 25.4358 9.24999 25.4375Z"
                         fill="#0388A9" />
@@ -152,12 +295,56 @@
                 </svg>
                 <h3>Other Services Of Maintenance</h3>
                 <p>In addition to maintenance, we offer a range of other services to support your business</p>
+                <button class="learn-more " id="myBtn4" onclick="ModelCard(4)">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Read More</span>
+                </button>
+                <!-- The Modal -->
+                <div id="myModal4" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <!-- <p>Some text in the Modal..</p> -->
+                        <div class="card">
+                            <div class="header">
+                                <span class="icon">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path clip-rule="evenodd"
+                                            d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                                <p class="alert">New message!</p>
+                            </div>
+
+                            <p class="message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+                                vel adipisci blanditiis voluptates eum. Nam, cum minima?
+                            </p>
+
+                            <div class="actions">
+                                <a class="read" href="">
+                                    Take a Look
+                                </a>
+
+                                <a class="mark-as-read" href="">
+                                    Mark as Read
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- -------------------- -->
             </div>
 
         </div>
 
     </section>
-    <!-- end Second section -->
+    <!-- end Second section --> 
 
     <footer>
         <div class="footer__logo">
@@ -198,7 +385,7 @@
             </ul>
         </div>
     </footer>
-
+    
 </body>
 
 </html>
