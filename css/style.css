@@ -366,10 +366,10 @@ button span {
   row-gap: 6px;
 }
 
-.num3,
+/* .num3,
 .num4 {
   row-gap: 11px;
-}
+} */
 
 .feature svg {
   width: 25px;
@@ -1213,7 +1213,7 @@ label {
   }
 
   .testimonial_section h2 {
-    font-size: 33px;
+    font-size: 32px;
   }
   .menu {
     width: 30px;
