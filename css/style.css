@@ -651,8 +651,7 @@ button:hover .button-text {
 
 .testimonial_section {
   background: rgb(234 242 255);
-  /* height: 460px; */
-  height: 550px;
+  height: 460px;
 }
 
 .wrapper{
@@ -1209,6 +1208,13 @@ label {
 }
 
 @media screen and (max-width: 768px) {
+  .testimonial_section {
+    height: 550px;
+  }
+
+  .testimonial_section h2 {
+    font-size: 33px;
+  }
   .menu {
     width: 30px;
   }
