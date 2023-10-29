@@ -25,4 +25,4 @@ Nous sommes ravis de vous accueillir sur notre landing page et espérons que vou
     
 ## Notre Landing Page :
 
-  - Jira link :  https://namek2024.atlassian.net/jira/software/projects/MDDWPS/boards/5
+  - Jira link : https://namek2024.atlassian.net/jira/software/projects/BRIEF3/boards/6
