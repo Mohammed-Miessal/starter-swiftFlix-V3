@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Site Metas -->
+    <meta name="keywords"
+        content="consultations, conseil, services, expertise, domaine d'expertise, spécialiste, professionnels, solutions">
+    <meta name="description"
+        content="Obtenez des consultations professionnelles de nos experts dans divers domaines. Nous offrons des services de conseil personnalisés pour répondre à vos besoins.">
+    <meta name="author" content="Nom du responsable de l'entreprise">
+
+    <title>SwiftFix Contact page</title>
     <link rel="stylesheet" href="css/style.css">
-        <!-- Unicons CSS -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-        <script src="js/script.js" defer></script>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
-    </head>
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="js/script.js" defer></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+</head>
+
 <body>
     <nav class="nav">
         <!-- --------- logo ------- -->
@@ -63,60 +72,60 @@
 
     </nav>
 
- <!-- First section starts -->
- <section class="main">
-    <div class="container2 ">
-        <div class="main__title contact__title">
-            <div class=" contact__heading">
-                <h1>Contact US </h1>
-            </div>
-            <form id="form" action="">
-                <div class="form-flow elements">
-                    <input type="text" placeholder="Name" id="fullname"> 
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error massege</small>
+    <!-- First section starts -->
+    <section class="main">
+        <div class="container2 ">
+            <div class="main__title contact__title">
+                <div class=" contact__heading">
+                    <h1>Contact US </h1>
                 </div>
-                <div class="form-flow elements">
-                    <input type="email" placeholder="Email" id="email">
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error massege</small>
-                </div>
-                <div class="contact__dropdown form-flow">
+                <form id="form" action="">
+                    <div class="form-flow elements">
+                        <input type="text" placeholder="Name" id="fullname">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massege</small>
+                    </div>
+                    <div class="form-flow elements">
+                        <input type="email" placeholder="Email" id="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massege</small>
+                    </div>
+                    <div class="contact__dropdown form-flow">
 
-                    <label for="topicSelect">Choose a Topic:</label>
-                   <div class="selections">
-                    <select id="topicSelect" name="topic" class="topic" >
-                        <option selected disabled>Choose a Topic</option>
-                        <option value="topic1">Topic 1</option>
-                        <option value="topic2">Topic 2</option>
-                        <option value="topic3">Topic 3</option>
-                        <option value="topic4">Topic 4</option>
-                    </select> 
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error massege</small>
-                   </div>
-                   
-                </div>
-                <div class="form-flow  elements ">
-                    <input type="text" class="message__box" placeholder="Message" id="message"> 
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error massege</small>
-                </div>
-                <div class="form-flow elements__button">
-                    <button><span>Submit</span></button>
-                </div>
-            </form>
+                        <label for="topicSelect">Choose a Topic:</label>
+                        <div class="selections">
+                            <select id="topicSelect" name="topic" class="topic">
+                                <option selected disabled>Choose a Topic</option>
+                                <option value="topic1">Topic 1</option>
+                                <option value="topic2">Topic 2</option>
+                                <option value="topic3">Topic 3</option>
+                                <option value="topic4">Topic 4</option>
+                            </select>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error massege</small>
+                        </div>
+
+                    </div>
+                    <div class="form-flow  elements ">
+                        <input type="text" class="message__box" placeholder="Message" id="message">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massege</small>
+                    </div>
+                    <div class="form-flow elements__button">
+                        <button><span>Submit</span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact__map">
+                <div id="googleMap"></div>
+            </div>
         </div>
-        <div class="contact__map">
-            <div id="googleMap"></div>
-        </div>
-    </div>
-</section>
-<!-- end First section -->
+    </section>
+    <!-- end First section -->
     <footer>
         <div class="footer__logo">
             <svg viewBox="0 0 165 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,8 +168,9 @@
 
     <script src="js/contact.js"></script>
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-<!-- End Google Map -->
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
 
 </body>
+
 </html>
