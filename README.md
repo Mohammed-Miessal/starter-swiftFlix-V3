@@ -18,10 +18,9 @@ Notre landing page est conçue pour vous offrir un aperçu rapide de ce que nous
 Nous sommes ravis de vous accueillir sur notre landing page et espérons que vous trouverez toutes les informations dont vous avez besoin. Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter.
 
 ## Lien des maquettes du projet (" hight & low " fidelity) :
-- Low fidelity link     :
-<a href='https://www.figma.com/file/RD8mbSg3lTscPyXRmJQN0l/Wireframe-SwiftFix?type=design&mode=design&t=XiqJBQsarwcGveJw-1'>  Click here  </a>
+
 - Hight fidelity        :
-<a href='https://www.figma.com/file/Z1e6zX0Px44sjDhxOhaqiu/Project-SwiftFix?type=design&mode=design&t=XiqJBQsarwcGveJw-1'>   Click here  </a>
+<a href='https://www.figma.com/file/mDExBjLR9cwsJTlUi9bwqq/SwiftFix-Maquettes?type=design&node-id=0%3A1&mode=design&t=3SSvTFjMMZ3kOfUA-1'>   Click here  </a>
     
 ## Notre Landing Page :
 
