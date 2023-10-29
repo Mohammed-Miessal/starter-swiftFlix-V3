@@ -1,6 +1,6 @@
 /* ****************************** ****************************** */
 
-                /*  M O B I L E    F I R S T  */
+/*  M O B I L E    F I R S T  */
 
 /* ****************************** ****************************** */
 
@@ -654,13 +654,15 @@ button:hover .button-text {
   height: 460px;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   margin: 0 34px;
   position: relative;
-   background-color: rgb(236 243 255);;
+  background-color: rgb(236 243 255);
+  ;
 }
-.wrapper i{
+
+.wrapper i {
   top: 50%;
   height: 44px;
   width: 44px;
@@ -675,52 +677,61 @@ button:hover .button-text {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active{
+
+.wrapper i:active {
   transform: translateY(-50%) scale(0.9);
 }
-.wrapper i:hover{
+
+.wrapper i:hover {
   background: #f2f2f2;
 }
-.wrapper i:first-child{
+
+.wrapper i:first-child {
   left: -22px;
   display: none;
 }
-.wrapper i:last-child{
+
+.wrapper i:last-child {
   right: -22px;
 }
-.wrapper .carousel{
+
+.wrapper .carousel {
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
-.carousel.dragging{
+
+.carousel.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
-.carousel.dragging img{
+
+.carousel.dragging img {
   pointer-events: none;
 }
-.carousel img{
+
+.carousel img {
   height: 340px;
   object-fit: contain;
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 3);
 }
-.carousel img:first-child{
+
+.carousel img:first-child {
   margin-left: 0px;
 }
 
 @media screen and (max-width: 900px) {
-  .carousel img{
+  .carousel img {
     width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 550px) {
-  .carousel img{
+  .carousel img {
     width: 100%;
   }
 }
@@ -1195,6 +1206,22 @@ label {
   }
 }
 
+@media screen and (min-width : 1000px) {
+  .title2 {
+    width: 100% !important;
+  }
+
+  .side1 h2 {
+    width: 301px;
+    font-size: 42px !important;
+    margin-bottom: 24px;
+  }
+
+  .side1 p {
+    font-size: 18px !important;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .nav {
     padding: 15px 50px;
@@ -1215,6 +1242,7 @@ label {
   .testimonial_section h2 {
     font-size: 30px;
   }
+
   .menu {
     width: 30px;
   }
