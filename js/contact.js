@@ -7,7 +7,6 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
-
 //selecting elements
 let form = document.querySelector("#form");
 let userName = document.getElementById("fullname");
